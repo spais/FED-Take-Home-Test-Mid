@@ -1,0 +1,50 @@
+:root {
+  --clr-purple-100: hsl(225, 100%, 17%);
+  --clr-yellow-100: hsl(40, 98%, 58%);
+  --clr-gray-100: hsl(0, 0%, 86%);
+  --clr-gray-200: hsl(0, 0%, 40%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-highlight: 	hsl(211, 49%, 63%);
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-kerning: auto;
+  font-kerning: auto;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  font-weight: $font-weight-normal;
+  font-family: $font-family;
+  overflow: hidden;
+}
+
+strong {
+  font-weight: $font-weight-bold;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

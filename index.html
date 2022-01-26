@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FED Take Home Test</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/css/index.scss" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="brand">
+        <img src="./src/images/logo.svg" alt="MY BRAND logo" class="brand__logo" />
+        <p class="brand__copy">ENROLLMENT AVAILABLE <span class="brand__copy_date">through 12/31/21</span></p>
+      </div>
+      <div class="header__imgSection">
+        <div class="header__imgSection-image"></div>
+      </div>
+    </header>
+    <section class="offer">
+      <div class="offer__contr">
+        <p class="offer__preheader">For a limited time</p>
+        <h1 class="offer__headerH1">Enjoy a complimentary Food Pass subscription for up to 12-months</h1>
+        <p class="offer__copy">
+          Enroll with your credit card and you could <strong>save up to <span class="offer__pricing jsOfferPrice"></span></strong> in subscription fees annually!
+        </p>
+        <p id="subscribeMessage" class="offer__copy">Don't miss this opportunity! <a href="#" id="subscribeLink" class="offer__link">Click here to subscribe!</a></p>
+      </div>
+      <div class="offer__pricingSection">
+        <div class="offer__pricingSection-contr">
+          <p class="offer__pricingSection-copy">up to <span class="offer__pricingSection-pricing jsOfferPrice"></span> in value</p>
+        </div>
+      </div>
+    </section>
+    <section class="savings">
+      <div class="savings__colLeft">
+        <img src="./src/images/piggy-bank.jpg" alt="Piggy Bank" class="savings__colLeft-image" />
+      </div>
+      <div class="savings__colRight">
+        <div class="savings__contr">
+          <h2 class="savings__headerH2">
+            Calculate Yearly Savings
+            <span class="savings__headerH2-subheader">
+              with the
+              <span class="savings__headerH2-subheader-yellow">
+                Food Plus Card
+              </span>
+            </span>
+          </h2>
+          <div class="calculatorModule">
+            <div class="calculatorModule__colLeft">
+              <label class="calculatorModule__label">
+                Monthly Spending
+                <i class="calculatorModule__currency">$</i>
+                <input type="text" id="spendings" class="calculatorModule__input" placeholder="0" />
+              </label>
+            </div>
+            <div class="calculatorModule__colRight">
+              <label class="calculatorModule__label">
+                Annual Savings
+                <input type="text" id="savings" class="calculatorModule__output" value="$0" disabled />
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

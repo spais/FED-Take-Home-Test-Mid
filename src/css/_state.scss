@@ -1,0 +1,18 @@
+.copy--confirm-subscription {
+  font-weight: $font-weight-bold;
+  color: var(--clr-yellow-100);
+}
+
+
+.textAnimate {
+  animation: submitEffect 400ms cubic-bezier(0.1, -0.6, 0.2, 0);
+}    
+
+@keyframes submitEffect {
+  0% {
+    font-size: 4.8rem;
+  }
+  100% {
+    font-size: 100%;
+  }
+}
